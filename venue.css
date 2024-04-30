@@ -1,0 +1,380 @@
+html, body{
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif ;
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+/* NAV CSS */
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #fff;
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+.nav .links a{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav .links .mainlink{
+    color: #e0501b;
+}
+
+.nav img{
+    position: relative;
+    width: 230px;
+    margin-left: 35px;
+}
+
+/* Landing Section */
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 70vh;
+}
+
+.landingtext h1{
+    font-size: 5vw;
+    margin: 0 !important;
+}
+
+.landingtext h3{
+    margin: 6px !important;
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 30px;
+}
+
+/* Info Section */
+
+.infosection{
+    height: 1000px;
+}
+
+.infoheader{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.infoheader .span{
+    color: #e0501b;
+}
+
+.infocards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infocards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infocards .card{
+    position: relative;
+    height: 360px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infocards2 .card{
+    position: relative;
+    height: 360px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+}
+
+.infocards .one .card1img{
+    width: 310px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.infocards .two .card2img{
+    width: 310px;
+    position: absolute;
+    top: -48px;
+    left: 20px;
+}
+
+.infocards .three .card3img{
+    width: 310px;
+    position: absolute;
+    top: -36px;
+    left: 20px;
+}
+
+.infocards2 .four .card4img{
+    width: 310px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.infocards2 .five .card5img{
+    width: 300px;
+    position: absolute;
+    top: -43px;
+    left: 26px;
+}
+
+.infocards2 .six .card6img{
+    width: 300px;
+    position: absolute;
+    top: -45px;
+    left: 26px;
+}
+
+.cardbg1{
+    height: 150px;
+    background-color: #ffce63;
+}
+
+.cardbg2{
+    height: 150px;
+    background-color: #a1cdff;
+}
+
+.cardbg3{
+    height: 150px;
+    background-color: #ffce63;
+}
+
+.cardbg4{
+    height: 150px;
+    background-color: #a1cdff;
+}
+
+.cardbg5{
+    height: 150px;
+    background-color: #ffce63;
+}
+
+.cardbg6{
+    height: 150px;
+    background-color: #a1cdff;
+}
+
+.cardcontent{
+    padding: 0 20px;
+}
+
+.cardcontent h2{
+    font-weight: 600;
+}
+
+.cardcontent p{
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+.cardcontent .cardbtn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    background-color: #ededed;
+    width: 25px;
+    height: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.cardcontent .cardbtn:hover{
+    background-color: #2f8be0;
+}
+
+.cardcontent .cardbtn .cardicon{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+}
+
+/* Footer CSS */
+
+.footer{
+    height: 300px;
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footertext h1{
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footerlinks a{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footerlinks p{
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 500px){
+    /* NAV */
+    
+    .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .nav .links a{
+        margin: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    
+    .nav img{
+        position: relative;
+        width: 210px;
+        margin: 20px;
+    }
+
+    /* LANDINGPAGE */
+
+    .landing{
+        flex-direction: column-reverse;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landingtext h1{
+        padding-top: 700px;
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+
+    .landingtext h3{
+        font-size: 16px;
+    }
+
+    /* INFOSECTION */
+
+    .infosection{
+        height: auto;
+    }
+
+    .infoheader{
+        text-align: center;
+        margin-top: 700px;
+    }
+
+    .infocards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .infocards2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+    }
+    
+    .infocards .card{
+       margin-bottom: 60px;
+   }
+    
+    .infocards2 .card{
+       margin-bottom: 60px;
+   }
+
+   /* FOOTER */
+
+   .footer{
+    height: auto;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    } 
+
+    .footertext h1{
+        font-size: 8vw;
+    }
+    
+    .footerinnertext{
+        font-size: 3vw !important;
+    }
+
+    .footerlinks a{
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .footerlinks p{
+        margin: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ccc;
+    }
+    
+
+}
