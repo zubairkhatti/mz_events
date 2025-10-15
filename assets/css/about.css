@@ -1,0 +1,274 @@
+html, body{
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif ;
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+/* NAV CSS */
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: #fff;
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.10);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} 
+
+.nav .links a{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav .links .mainlink{
+    color: #e0501b;
+}
+
+.nav img{
+    position: relative;
+    width: 230px;
+    margin-left: 35px;
+}
+
+/* Landing Section */
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.landingtext{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw 0 10vw;
+    height: 50vh;
+    margin-top: 40vh;
+}
+
+.landingtext h1{
+    font-size: 5vw;
+    margin: 0 !important;
+}
+
+.landingtext h3{
+    margin: 6px !important;
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 30px;
+}
+
+.landingtext2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw 0 10vw;
+    height: 250vh;
+}
+
+.landingtext2 h1{
+    font-size: 3vw;
+    margin: 0 !important;
+}
+
+.landingtext2 h3{
+    margin: 6px !important;
+    font-size: 20px;
+    opacity: 0.6;
+    line-height: 30px;
+}
+
+.abouttext{
+    position: absolute;
+    left: 10vw;
+    padding: 0 10px;
+    top: 60vw;
+}
+
+ol{
+    list-style: none;
+}
+
+ol span{
+    color: #e0501b;
+    font-size: 2.3em;
+}
+
+ol li{
+    position: relative;
+    top: 1vw;       
+    border-bottom: 1px solid #ebebeb;
+}
+
+li p{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    padding-left: 10vw;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+li span{
+    position: absolute;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+/* Footer CSS */
+
+.footer{
+    height: 300px;
+    background-color: #3f3f3f;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footertext h1{
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footerlinks a{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footerlinks p{
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 500px){
+    /* NAV */
+    
+    .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .nav .links a{
+        margin: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    
+    .nav img{
+        position: relative;
+        width: 210px;
+        margin: 20px;
+    }
+
+    /* LANDINGPAGE */
+
+    .landing{
+        flex-direction: column;
+        height: 270vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .landingtext h1{
+        font-size: 60px;
+        margin: 0 !important;
+    }
+
+    .landingtext h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .landingtext2 h1{
+        font-size: 50px;
+        margin: 0 !important;
+    }
+
+    .landingtext2 h3{
+        font-size: 24px;
+        /* line-height: 30px; */
+    }
+
+    .abouttext{
+        left: 10px;
+        height: 100px;
+    }
+            
+    ol li{
+        top: 1100px;
+    }
+    
+    li span{
+        font-size: 35px;
+    }
+    
+    li p{
+        font-size: 23px;
+        margin-left: 10px;
+    }
+
+   /* FOOTER */
+
+   .footer{
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    } 
+
+    .footertext h1{
+        font-size: 8vw;
+    }
+    
+    .footerinnertext{
+        font-size: 3vw !important;
+    }
+
+    .footerlinks a{
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .footerlinks p{
+        margin: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ccc;
+    }
+}
