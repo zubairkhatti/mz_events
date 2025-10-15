@@ -97,4 +97,4 @@ On successful submission, you’ll be redirected to `pages/regcomplete.html`.
 
 ## License
 
-This project is licensed under the terms of the license in [LICENCE](LICENCE).
+This project is licensed under the terms of the license in [LICENSE](LICENSE).
