@@ -41,6 +41,10 @@ mz_events/
 └── README.md
 ```
 
+## Live Demo
+[![mz_events — live demo](assets/images/preview.png)](https://zubairkhatti.github.io/mz_events/)
+
+👉 Visit the website: [mz_events](https://zubairkhatti.github.io/mz_events/)
 
 ## Getting Started (Local)
 
