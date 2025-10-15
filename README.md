@@ -17,7 +17,7 @@ A simple, static-first wedding hall booking website with a PHP booking form back
 
 ## Project Structure
 ```bash
-wedding_hall_booking_system/
+mz_events/
 ├── assets/
 │ ├── css/
 │ │ ├── main.css
