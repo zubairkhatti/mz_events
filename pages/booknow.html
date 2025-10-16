@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book Now</title>
-        <link rel="stylesheet" href="booknow.css" type="text/css"> 
+        <link rel="stylesheet" href="../assets/css/booknow.css" type="text/css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -20,10 +20,10 @@
                     <img src="../assets/images/logo.PNG" alt="website-logo">
                 </div>
                 <div class="links">
-                    <a href="index.html" class="mainlink">Home</a>
-                    <a href="venue.html" target="_blank">Venue</a>
-                    <a href="about.html" target="_blank">About</a>
-                    <a href="contact.html" target="_blank">Contact</a>
+                    <a href="../index.html" class="mainlink">Home</a>
+                    <a href="venue.html">Venue</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
 
@@ -32,90 +32,96 @@
             <div class="landing">
                 <div class="landingtext" data-aos="fade-up" data-aos-duration="1000">
                     <h1>Enter your details</h1>
-                    <h3>Fill your details carefully, <br> your booking depend upon your given information.</h3>
+                    <h3>Fill your details carefully, <br> your booking depends on your given information.</h3>
                 </div>
                 <div class="landingimage" data-aos="fade-left" data-aos-duration="2000">
                     <img src="../assets/images/booknow.png" alt="Main image">
                 </div>
             </div>
 
-            <!-- form Registration -->
+            <div class="data" data-aos="fade-up" data-aos-duration="1500">
+                <!-- Static-only: just navigate to regcomplete without saving -->
+                <form id="bookingForm" action="https://formspree.io/f/mjkajjzp" method="POST">
+                    <input type="hidden" name="_subject" value="New Booking Request - MZ Events">
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Redirect here after successful submit -->
+                    <input type="hidden" name="_next" value="https://zubairkhatti.github.io/mz_events/pages/regcomplete.html">
+                    <!-- Optional honeypot -->
+                    <input type="text" name="_honeypot" style="display:none">
 
-            <div class="data"  data-aos="fade-up" data-aos-duration="1500">
-                <form action="regcomplete.html" target="_blank" method="POST">
                     <h1>Your Registration</h1>
                     <br>
                     <div class="information">
                         <div class="field">
-                            <label for="name">First Name:</label>
-                            <input type="text" name="firstname" id="name" placeholder="Enter your first name">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="name">Last Name:</label>
-                            <input type="text" name="lastname" id="name" placeholder="Enter your last name">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="text">Phone No:</label>
-                            <input type="text" name="email" id="email" placeholder="Enter your phone number">
+                            <label for="uphone">Phone No:</label>
+                            <input type="tel" name="uphone" id="uphone" placeholder="e.g. 03XX or +92XX" required pattern="(\+92\d{10}|0[3]\d{9})" title="Enter a valid Pakistani mobile number: 03XXXXXXXXX or +92XXXXXXXXXX">
                         </div>
                         <br>
                         <div class="field">
-                            <label for="person">Venue:</label>
-                            <select name="person">
-                                <option value="1">Al-Abbas Marriage Hall</option>
-                                <option value="2">Mehran Shaadi Hall</option>
-                                <option value="3">Gulshan-e-Naeem Marriage Hall</option>
-                                <option value="4">Creek Marriage Hall</option>
-                                <option value="5">Laarh Marriage Hall</option>
-                                <option value="6">Indus Marriage Hall</option>
+                            <label for="hallName">Venue:</label>
+                            <select name="hallName" id="hallName" required>
+                                <option value="Al-Abbas Marriage Hall">Al-Abbas Marriage Hall</option>
+                                <option value="Mehran Shaadi Hall">Mehran Shaadi Hall</option>
+                                <option value="Gulshan-e-Naeem Marriage Hall">Gulshan-e-Naeem Marriage Hall</option>
+                                <option value="Creek Marriage Hall">Creek Marriage Hall</option>
+                                <option value="Laarh Marriage Hall">Laarh Marriage Hall</option>
+                                <option value="Indus Marriage Hall">Indus Marriage Hall</option>
                             </select>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="person">Venue:</label>
-                            <select name="person">
-                                <option value="1">Nikkah Ceremony</option>
-                                <option value="2">Walima Ceremony</option>
-                                <option value="3">Hina Function</option>
-                                <option value="4">Engagement Ceremony</option>
-                                <option value="5">Dinner</option>
-                                <option value="6">Party Celebration</option>
+                            <label for="event">Event:</label>
+                            <select name="event" id="event" required>
+                                <option value="Nikkah Ceremony">Nikkah Ceremony</option>
+                                <option value="Walima Ceremony">Walima Ceremony</option>
+                                <option value="Hina Function">Hina Function</option>
+                                <option value="Engagement Ceremony">Engagement Ceremony</option>
+                                <option value="Dinner">Dinner</option>
+                                <option value="Party Celebration">Party Celebration</option>
                             </select>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="date">Date:</label>
-                            <input type="date" name="date" id="date">
+                            <label for="mdate">Date:</label>
+                            <input type="date" name="mdate" id="mdate" required>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="person">Time:</label>
-                            <select name="person">
-                                <option value="1">10:00 AM</option>
-                                <option value="2">12:00 PM</option>
-                                <option value="3">02:00 PM</option>
-                                <option value="4">06:00 PM</option>
-                                <option value="5">08:00 PM</option>
-                                <option value="6">10:00 PM</option>
+                            <label for="timing">Time:</label>
+                            <select name="timing" id="timing" required>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="02:00 PM">02:00 PM</option>
+                                <option value="06:00 PM">06:00 PM</option>
+                                <option value="08:00 PM">08:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
                             </select>
                         </div>
                         <br>
                         <div class="field">
-                            <label for="person">Quantity:</label>
-                            <select name="person">
-                                <option value="1">100 Persons</option>
-                                <option value="2">200 Persons</option>
-                                <option value="3">300 Persons</option>
-                                <option value="4">400 Persons</option>
-                                <option value="5">500 Persons</option>
-                                <option value="6">1000 Persons</option>
-                                <option value="7">1000+ Persons</option>
+                            <label for="peopleQtn">Quantity:</label>
+                            <select name="peopleQtn" id="peopleQtn" required>
+                                <option value="100 Persons">100 Persons</option>
+                                <option value="200 Persons">200 Persons</option>
+                                <option value="300 Persons">300 Persons</option>
+                                <option value="400 Persons">400 Persons</option>
+                                <option value="500 Persons">500 Persons</option>
+                                <option value="1000 Persons">1000 Persons</option>
+                                <option value="1000+ Persons">1000+ Persons</option>
                             </select>
                         </div>
                         <br>
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -131,23 +137,65 @@
                     </h1>
                 </div>
                 <div class="footerlinks" data-aos="fade-left" data-aos-duration="1600">
-                    <a href="venue.html" target="_blank">Venue</a>
+                    <a href="venue.html">Venue</a>
                     <p>All type of events are waiting for you.</p>
                     <a href="#">Help</a>
                     <p>Visit the help section by click on HELP</p>
-                    <a href="about.html" target="_blank">About</a>
+                    <a href="about.html">About</a>
                     <p>Visit the about section by click on ABOUT</p>
-                    <a href="contact.html" target="_blank">Contact</a>
+                    <a href="contact.html">Contact</a>
                     <p> Call us on: +92332-2413386 <br>
                     Email: engrzubairkhatti@gmail.com</p>
                 </div>
-            </div>            
-
+            </div>
         </div>
-        
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../assets/js/main.js"></script>
         <script>
-            AOS.init();
-        </script>
+            (function() {
+              const form = document.getElementById('bookingForm');
+              form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                try {
+                  const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                  });
+                  // Redirect on success (even if Formspree would show its own page)
+                  if (res.ok) {
+                    window.location.href = 'https://zubairkhatti.github.io/mz_events/pages/regcomplete.html';
+                  } else {
+                    // Optional: handle errors
+                    window.location.href = 'https://zubairkhatti.github.io/mz_events/pages/regcomplete.html';
+                  }
+                } catch (err) {
+                  window.location.href = 'https://zubairkhatti.github.io/mz_events/pages/regcomplete.html';
+                }
+              });
+            })();
+          </script>
+<script>
+(function() {
+  var uphone = document.getElementById('uphone');
+  if (!uphone) return;
+
+  // Keep only digits (allow a single leading +)
+  uphone.addEventListener('input', function() {
+    var v = this.value;
+    var leadPlus = v.startsWith('+') ? '+' : '';
+    v = v.replace(/\D/g, '');
+    this.value = leadPlus + v;
+    this.setCustomValidity('');
+  });
+
+  // Custom message when pattern fails
+  uphone.addEventListener('invalid', function() {
+    this.setCustomValidity('Enter a valid Pakistani mobile number like 03XXXXXXXXX or +92XXXXXXXXXX');
+  });
+})();
+</script>
     </body>
 </html>
